@@ -26,6 +26,16 @@ Design for Ease of QA
 * OO best practices are usually meant to promot modifiability but they also have an equally profound impact on testability
   * For example, the single responsibility principle \(much easier to test; large parameter lists also cause a combinatorial explosion in complexity\) and encapsulation \(limiting exposure of internatl state limits how the outside world can break the code\)
 
+Test Doubles \(Mocks\)
+
+* Test Double is a general name for various patterns
+  * **Dummy** - No implementation, passed around, but not used - usually just to fill parameter requirements
+  * **Fake** - Has a working implementation, but not suitable for production use \(e.g., in-memory test database\)
+  * **Stub** - Somewhat similar to Fake, but only behaviour needed for testing is implemented \(i.e., has no logic, returns pre-programmed answer for testing\)
+  * **Spy** - A stub that also records information about how it was called
+  * **Mock** - A spy that expects to be used a certain way, can be used to test object interactions
+    * E.g., can throw an exception if it receives a call it doesn't expect and is checked during verification to ensure it got all the calls it was expecting
+
 Test Driven Development \(TDD\)
 
 * Writing test before writing code

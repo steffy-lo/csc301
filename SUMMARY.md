@@ -9,4 +9,5 @@
 * [Agile Methodologies: Scrum, Kanban](agile-methodologies-scrum-kanban.md)
 * [Unit Testing](unit-testing.md)
 * [Working With Data](working-with-data.md)
+* [Design Patterns](design-patterns.md)
 
